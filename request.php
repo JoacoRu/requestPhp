@@ -1,9 +1,8 @@
 <?php
 //OPCION 1
-function callToApi($page,$datos)
+function callToApi($url,$datos)
 {
 
-    $url = $page;
   
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_POST, 1);
